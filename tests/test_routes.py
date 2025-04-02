@@ -23,6 +23,8 @@ HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
 ######################################################################
 #  T E S T   C A S E S
 ######################################################################
+
+
 class TestAccountService(TestCase):
     """Account Service Tests"""
 
@@ -190,4 +192,4 @@ class TestAccountService(TestCase):
             'Referrer-Policy': 'strict-origin-when-cross-origin'
         }
         for key, value in headers.items():
-            self.assertEqual(response.headers.get(key),value)
+            self.assertEqual(response.headers.get(key), value)
